@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} {{product.name}} {% endblock %}
+
+{% block content %}
+
+<p>this 's product details</p>
+<lo>
+    <li>{{product.name}}</li>
+    <li>{{product.price}}</li>
+    <li>{{product.sellar}}</li>
+    <li>{{product.user}}</li>
+
+</lo>
+
+{% endblock %}

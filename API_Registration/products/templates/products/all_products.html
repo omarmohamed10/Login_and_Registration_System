@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %} Products {% endblock %}
+
+{% block content %}
+<div>
+
+
+<h2>List for all products</h2>
+<br>
+<table class="table table-striped table-hover">
+    <tr>
+        <th>product name</th>
+        <th>price</th>
+        <th>seller</th>
+    </tr>
+  {% for product in products%}
+    <tr>
+        <td>{{product.name}}</td>
+        <td>{{product.price}}</td>
+        <td>{{product.seller}}</td>
+
+
+    </tr>
+    {% endfor %}
+
+</table>
+</div>
+{% endblock %}

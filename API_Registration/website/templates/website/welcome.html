@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %} Demo {% endblock %}
+
+{% block content %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">about</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<h1>Welcome to our app</h1>
+<p>
+    this project is about building a service using <strong>Django framework</strong>
+    and connect with <strong>Postgresql engine</strong>
+    <br>
+    And has the following features
+    <ul>
+    <li>
+        User Registration
+    </li>
+    <li>
+        User Login
+    </li>
+    <li>
+        Each user could create multiple products and get them
+    </li>
+
+    </ul>
+</p>
+<button><a href="{% url 'register' %}">Create Account</a></button>
+<br>
+<br>
+<p>if you have an account, you can <button><a href="{% url 'login' %}">login</a></button></p>
+<br>
+  <div>
+          {% if messages %}
+          {% for message in messages %}
+            <div class="alert alert-{{message.tags}}">{{message}}</div>
+          {% endfor %}
+        {% endif %}
+      </div>
+
+{% endblock %}
