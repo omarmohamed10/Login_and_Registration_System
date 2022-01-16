@@ -13,3 +13,7 @@ following this instructions to run the project after download it:
 4- run this commend to run the project [python manage.py runserver]
 
 enjoy with it
+
+![](screenshot1.png)
+![](screenshot2.png)
+![](screenshot3.png)
