@@ -1,6 +1,6 @@
 # Login_and_Registration_System
 
-following this instructions to run the project after download it:
+## following this instructions to run the project after download it:
 
 1- create virtual environment
 
